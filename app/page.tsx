@@ -1,11 +1,25 @@
-import Image from "next/image";
+import Navbar from "./components/navbar/Navbar";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-       <main>
-            <h2 className="text-2xl text-red-600">hello from my new portfolio design</h2>
-       </main>
+    <div className="bg-[#163031] min-h-screen relative overflow-hidden">
+      {/* grid lines */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute top-0 bottom-0 left-[0%] w-px bg-[#225456] opacity-50"></div>
+        <div className="absolute top-0 bottom-0 left-[25%] w-px bg-[#225456] opacity-50"></div>
+        <div className="absolute top-0 bottom-0 left-[50%] w-px bg-[#225456] opacity-50"></div>
+        <div className="absolute top-0 bottom-0 left-[75%] w-px bg-[#225456] opacity-50"></div>
+        <div className="absolute top-0 bottom-0 right-[0%] w-px bg-[#225456] opacity-50"></div>
+      </div>
+
+      {/* main content */}
+      <main className="relative z-10 container mx-auto">
+        <Navbar />
+        <h2 className="text-2xl text-red-600 mt-10">
+          This site is under construction now
+        </h2>
+      </main>
     </div>
   );
 }
+
