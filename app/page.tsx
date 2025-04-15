@@ -1,3 +1,4 @@
+import HeroBanner from "./components/hero/HeroBanner";
 import Navbar from "./components/navbar/Navbar";
 
 export default function Home() {
@@ -15,8 +16,11 @@ export default function Home() {
       {/* main content */}
       <main className="relative z-10 container mx-auto">
         <Navbar />
+        {/* hero */}
+        <HeroBanner/>
+        {/*  */}
         <h2 className="text-2xl text-red-600 mt-10">
-          This site is under construction now
+          This site is under construction now wait some time
         </h2>
       </main>
     </div>
